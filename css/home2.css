@@ -1,0 +1,197 @@
+/*
+  说明：两个空行隔开的注释为大分类
+*/
+
+
+/*通用类*/
+
+.radius_normal {
+    border-radius: 10px;
+}
+
+
+/*各div样式*/
+
+.middle_div {
+    /*设置居中*/
+    align-items: center;
+    /*垂直居中*/
+    display: flex;
+    /*水平居中*/
+    justify-content: center;
+    /*水平居中*/
+}
+
+.header_div {
+    /*居中功能已由"middle_div"实现*/
+    width: 100%;
+}
+
+
+/*天气与视频所在div*/
+
+.weather_videos {
+    height: fit-content;
+    width: 100%;
+}
+
+#weather_div {
+    float: left;
+    text-align: center;
+    height: 350px;
+    width: 50%;
+    border-right: 1px solid cornflowerblue;
+}
+
+#videos_div {
+    float: right;
+    text-align: center;
+    height: 350px;
+    width: 49.5%;
+    /*考虑到边框所占空间，此项不能设置为50%*/
+}
+
+.videos_a_div {
+    width: fit-content;
+    border: 1px solid cornflowerblue;
+}
+
+
+/*搜索div*/
+
+.search_div {
+    text-align: center;
+}
+
+#searchBox_div {
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid black;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+/*hr样式*/
+
+.normal_hr {
+    background-color: cornflowerblue;
+}
+
+
+/*h样式*/
+
+.spacing_h {
+    letter-spacing: 2em;
+    /* 设置"letter-spacing"后，由于是在每个字的尾部添加缩进，最终会导致右侧多出一格缩进空间，导致整体向左偏移。再设置同样值得首行缩进即可
+    详情可见:https://www.w3h5.com/post/105.html */
+    text-indent: 2em;
+}
+
+
+/*a样式*/
+
+
+/*无下划线*/
+
+.unclear_a:link,
+.unclear_a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.unclear_a:hover,
+.unclear_a:active {
+    color: blue;
+    text-decoration: underline;
+}
+
+
+/*有下划线*/
+
+.underline_a1:link,
+.underline_a1:visited {
+    color: black;
+    text-decoration: underline;
+}
+
+.underline_a1:hover,
+.underline_a1:active {
+    color: blue;
+    text-decoration: underline;
+}
+
+.underline_a2:link,
+.underline_a2:visited {
+    text-decoration: underline;
+    color: blue;
+}
+
+.underline_a2:hover,
+.underline_a2:active {
+    color: red;
+}
+
+
+/*"网课相关"的a样式*/
+
+.title_self_a {
+    font-size: 22px;
+}
+
+
+/*textarea属性*/
+
+#content_searchBox {
+    /* 搜索框主体。用于输入文本 */
+    width: 500px;
+    height: 30px;
+    resize: none;
+    font-size: medium;
+    /*字重*/
+    font-weight: 400;
+    border: 0;
+    border-left: 1px solid black;
+    text-align: center;
+}
+
+#content_searchBox:focus {
+    outline: none;
+}
+
+
+/*input属性*/
+
+.Button_searchBox {
+    /* 搜索框两侧按钮 */
+    height: 35px;
+    vertical-align: top;
+    border: 0;
+}
+
+.searchButton_searchBox {
+    /* 搜索框右侧搜索按钮 */
+    border-radius: 0 10px 10px 0;
+    background-color: white;
+    border: 0;
+}
+
+#cleanSearchContent_searchBox {
+    /* 在搜索框内部，用于清除已输入内容的按钮 */
+    height: 35px;
+    vertical-align: top;
+    border-right: 1px solid black;
+    border-radius: 0;
+}
+
+
+/*select属性*/
+
+#select_searchBox {
+    /* 搜索框左侧"搜索引擎列表" */
+    width: fit-content;
+    border-radius: 10px 0 0 10px;
+}
+
+#select_searchBox:focus {
+    outline: none;
+}

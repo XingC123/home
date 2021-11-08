@@ -1,0 +1,43 @@
+/*
+  说明：两个空行隔开的注释为大分类
+*/
+
+
+/*div样式*/
+.normal_div{
+    /*只设置[居中，边框]*/
+    text-align: center; 
+    border: 1px solid cornflowerblue;
+}
+
+
+/*左侧导航栏*/
+#left_nav_div{
+    float: left; 
+    width: 19%; 
+    border-left: 1px solid cornflowerblue;
+}
+#hr{
+    color: black; 
+    size: 1px;
+}
+
+
+/*右侧详情页*/
+#right_exhibition_div{
+    float: right; 
+    width: 80%; 
+    border-left: 1px solid cornflowerblue;
+}
+.every_exhibition_div{
+    width: 100%; 
+    border-bottom: 1px solid black;
+}
+.download_section{
+    width: fit-content; 
+    border: 1px solid cornflowerblue;
+}
+/*img样式*/
+.normal_img{
+    width: 216px;               /*width的"216px"为:1080/5"*/
+}

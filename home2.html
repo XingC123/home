@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="XingC">
+    <title>万象聚合</title>
+
+    <link rel="stylesheet" href="css/home2.css">
+
+    <script src="js_style/home2.js"></script>
+    <script src="js_style/home2_thirdFunction.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="middle_div header_div">
+            <h3 class="spacing_h">万象聚合</h3>
+        </div>
+    </header>
+    <hr class="normal_hr" size="5" />
+    <div class="weather_videos middle_div">
+        <div class="search_div">
+            <h1>搜索</h1>
+            <!-- <div class="videos_a_div"> -->
+            <div id="searchBox_div">
+                <select name="" id="select_searchBox" class="Button_searchBox">
+                    <option value="百度">百度</option>
+                    <option value="谷歌">谷歌</option>
+                </select><input type="text" id="content_searchBox" onkeypress="onKeyPress(event)"></input><input
+                    type="button" value="X" id="cleanSearchContent_searchBox"
+                    class="searchButton_searchBox Button_searchBox"
+                    onclick="cleanTextareaContent_searchBox();"></input><input type="button" value="搜索"
+                    class="searchButton_searchBox Button_searchBox" onclick="search_searchBox();"></input>
+            </div>
+            <!-- </div> -->
+        </div>
+    </div>
+    <hr class="normal_hr" size="10" />
+    <div class="weather_videos middle_div">
+        <div id="weather_div">
+            <div>
+                <h1>天气</h1>
+                <div>
+                    <iframe src="http://i.tianqi.com/index.php?c=code&id=7&icon=5&num=1" frameborder="0"></iframe>
+                    <iframe src="https://tianqiapi.com/api.php?style=tt&skin=pitaya" frameborder="0"
+                        allowtransparency="true" style="height: 50%; width: 95%;"></iframe>
+                </div>
+            </div>
+        </div>
+        <div id="videos_div" class="middle_div">
+            <div>
+                <h1>视频</h1>
+                <div class="videos_a_div">
+                    <a href="https://www.bilibili.com" target="_blank"><img src="picture/bilibili.jpg" width="200"
+                            height="71.4px" alt="哔哩哔哩"></a>
+                    <a href="https://www.douyu.com/" target="_blank"><img src="picture/斗鱼.jpeg" width="200"
+                            alt="斗鱼直播"></a>
+                    <br>
+                    <a href="http://www.zhenbuka.fun/" target="_blank" class="underline_a1 title_self_a">真不卡影院</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="normal_hr" size="10" />
+    <div class="middle_div">
+        <div class="search_div">
+            <h1>网课相关</h1>
+            <div class="videos_a_div">
+                <a href="http://i.mooc.chaoxing.com/space/index?t=1635342044654" target="_blank"
+                    class="underline_a1 title_self_a">学习通</a>
+                <a href="https://www.icourse163.org/" target="_blank" class="underline_a1 title_self_a">慕课</a>
+                <a href="https://www.zhihuishu.com/" target="_blank" class="underline_a1 title_self_a">智慧树</a>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <hr style="size: 1px;">
+        <div style="text-align: center;">
+            <hgroup>
+                <h3>网站信息</h3>
+                <h6>作者:XingC</h6>
+                <a class="underline_a1" href="otherApp_XingC.html" target="_blank">作者其他作品</a>
+                <h6>合作请联系:123fengmo@gmail.com</h6>
+            </hgroup>
+        </div>
+    </footer>
+</body>
+
+</html>
