@@ -29,7 +29,5 @@ function search_searchBox() {
 
 function cleanTextareaContent_searchBox() {
     //点击按钮后清除文本框内容
-    let textarea = document.getElementById('content_searchBox');
-
-    textarea.value = '';
+    document.getElementById('content_searchBox').value = '';
 }
